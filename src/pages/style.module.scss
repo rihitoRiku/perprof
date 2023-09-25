@@ -1,0 +1,25 @@
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=PT+Serif:ital@1&family=Poppins&family=Roboto&family=Ubuntu&display=swap");
+// font-family: 'Inter', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'PT Serif', serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+
+// PAGES
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+/* styles.css or styles.scss */
+.animebackroundfixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images7.alphacoders.com/768/768576.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; /* Ensure it's below other content */
+}
