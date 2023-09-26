@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/home";
 import Layout from "./pages/layout";
 import NoPage from "./pages/nopage";
+import Test from "./pages/test/test";
 import "./App.css";
 import { useEffect } from "react";
 
@@ -28,6 +29,7 @@ function App({ Component, pageProps }) {
         <Route path="/" element={<Layout {...pageProps}/>}> 
           <Route index element={<Home />} />
           {/* <Route path="/" element={< />} /> */}
+          <Route path="/test" element={<Test />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
