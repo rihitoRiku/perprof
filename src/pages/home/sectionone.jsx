@@ -21,7 +21,7 @@ export default function SectionOne() {
             <div className="mb-2 text-2xl font-normal font-montserrat tracking-tight text-black-300 md:text-3xl lg:text-4xl dark:text-light-300">
               <Typewriter
                 options={{                  
-                  strings: ["Front-end Developer", "Tech Enthausiast", "Game & Anime Lovers"],
+                  strings: ["Software Engineer", "Front-end Web Developer", "Fullstack Web Developer", "UI/UX Designer", "Tech Enthausiast", "Game & Anime Lovers"],
                   autoStart: true,
                   loop: true,
                 }}
