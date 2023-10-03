@@ -1,0 +1,36 @@
+.bgHeader {
+    background-image: url("./.././../../public/Assets/header-bg.svg");
+    opacity: 20%;
+}
+
+// .bgHeader {
+//     // position: relative;
+//     background-image: url("./.././../../public/Assets/header-bg.svg");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     /* Add any other background properties you have */
+
+//     /* Set the background color with opacity */
+//     background-color: rgba(23, 23, 23, 0.2); /* Adjust the last value (0.2) for opacity */
+
+//     /* Add the gradient overlay for top and bottom */
+//     &::before,
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         width: 100%;
+//         height: 20%; /* Adjust the height as needed */
+//         background: linear-gradient(rgba(23, 23, 23, 0.2), rgba(23, 23, 23, 0.5), rgba(23, 23, 23, 0.8), rgba(23, 23, 23, 1), rgba(23, 23, 23, 0.8), rgba(23, 23, 23, 0.5), rgba(23, 23, 23, 0.2)); /* Adjust the opacity and colors as needed */
+
+//         pointer-events: none;
+//     }
+
+//     &::before {
+//         top: 0;
+//     }
+
+//     &::after {
+//         bottom: 0;
+//     }
+// }
