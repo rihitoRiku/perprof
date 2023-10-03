@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import AOS from "aos";
 
 import ButtonComponent from "../../components/button/buttoncomponent";
+import NavbarComponent from "../../components/navbar/navbarcomponent";
 
 export default function SectionTwo() {
   AOS.init();
@@ -24,27 +25,30 @@ export default function SectionTwo() {
     <>
       <div className="w-full bg-white dark:bg-black">
         <div className="max-w-screen-2xl mx-auto h-full px-4">
-          
-          <div className="flex items-center justify-between">
-            <div className="">
-              <div className=" pt-12 text-lg font-poppins font-medium text-black-300 lg:text-xl dark:text-black-300">
+          <div className="flex items-center justify-between ">
+            <div className=" w-max">
+              <div className=" pt-12 text-lg font-poppins font-medium text-black-300 lg:text-xl dark:text-black-300 w-max">
                 Today is {dayOfWeek}
               </div>
-              <div className=" text-2xl font-poppins font-bold text-black lg:text-3xl dark:text-light-200 ">
+              <div className=" text-2xl font-poppins font-bold text-black lg:text-3xl dark:text-light-200 w-max">
                 {time.toLocaleTimeString()}
               </div>
             </div>
-            <div className="inline-flex gap-6 lg:gap-8 pt-12">
-              <a href="">
+            {/* Navbar */}
+            <div className=" w-full pt-12 ">
+              <NavbarComponent />
+            </div>
+            <div className="inline-flex gap-6 lg:gap-8 pt-12 ">
+              <a className="w-max" href="">
                 <img
-                  className="w-8 h-8 lg:w-10 lg:h-10"
+                  className=" w-8 h-8 lg:w-10 lg:h-10"
                   src="./Assets/instagram.png"
                   alt=""
                 />
               </a>
-              <a href="">
+              <a  className="w-max" href="">
                 <img
-                  className="w-8 h-8 lg:w-10 lg:h-10"
+                  className=" w-8 h-8 lg:w-10 lg:h-10"
                   src="./Assets/facebook.png"
                   alt=""
                 />
