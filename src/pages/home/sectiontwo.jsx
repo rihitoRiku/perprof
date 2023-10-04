@@ -75,7 +75,7 @@ export default function SectionTwo() {
                 <div className="w-full h-[32rem] border"></div>
                 <button
                   type="button"
-                  className="inline-flex justify-center items-center text-black-100 dark:text-light-100 font-medium w-max  bg-white hover:bg-gray-100 border border-gray-200 rounded-lg text-md lg:px-3 lg:py-2 px-2.5 py-1.5 pe-4 text-center  dark:bg-gray-800 dark:border-gray-700  dark:hover:bg-gray-700 mt-8 space-x-2"
+                  className="inline-flex justify-center items-center text-black-100 dark:text-light-100 font-medium w-max  hover:bg-gray-100 border border-gray-200 rounded-lg text-md lg:px-3 lg:py-2 px-2.5 py-1.5 pe-4 text-center  dark:border-gray-700  dark:hover:bg-gray-700 mt-8 space-x-2"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

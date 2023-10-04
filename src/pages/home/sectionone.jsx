@@ -108,7 +108,7 @@ export default function SectionOne() {
                 viewBox="0 0 64 64"
                 text="View Github"
                 fillOne="#083344"
-                additionalClasses="w-max text-gray-900 bg-white dark:bg-black-100 hover:bg-gray-100 border border-gray-200 font-medium rounded-lg text-md lg:px-3 lg:py-2 px-2.5 py-1.5 pe-4 text-center inline-flex items-center dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 lg:mt-8 space-x-2"
+                additionalClasses="w-max text-gray-900 border border-gray-200 font-medium rounded-lg text-md lg:px-3 lg:py-2 px-2.5 py-1.5 pe-4 text-center inline-flex items-center dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 lg:mt-8 space-x-2"
               />
               <ButtonComponent
                 btnType="button"
