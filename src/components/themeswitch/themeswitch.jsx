@@ -35,7 +35,7 @@ const TheSwitch = () => {
       <div className="relative">
         <div
           onClick={toggleMode}
-          className="absolute top-0 right-0 z-20 mt-3 me-3 lg:mt-8 lg:me-8 cursor-pointer"
+          className="absolute top-0 right-0 z-40 mt-3 me-3 lg:mt-8 lg:me-8 cursor-pointer"
         >
           {localStorage.theme === "dark" ? (
             <>
