@@ -15,7 +15,7 @@ export default function SectionOne() {
     <>
       {/* <div className={`w-24`}></div> */}
       <div
-        className={`max-w-screen-2xl w-full absolute top-0 left-0 right-0 bottom-0 mx-auto h-screen flex items-center justify-center bg-cover ${styles.bgHeader} bg-center bg-no-repeat z-10`}
+        className={`max-w-screen-2xl w-full absolute top-0 left-0 right-0 bottom-0 mx-auto h-screen flex items-center justify-center bg-cover ${styles.bgHeader} bg-center bg-no-repeat`}
       ></div>
       <div className="h-screen w-full bg-white dark:bg-black">
         <div className={`max-w-screen-2xl mx-auto h-full`}>
@@ -108,7 +108,7 @@ export default function SectionOne() {
                 viewBox="0 0 64 64"
                 text="View Github"
                 fillOne="#083344"
-                additionalClasses="w-max text-gray-900 border border-gray-200 font-medium rounded-lg text-md lg:px-3 lg:py-2 px-2.5 py-1.5 pe-4 text-center inline-flex items-center dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 lg:mt-8 space-x-2"
+                additionalClasses={`w-max text-gray-900 border border-gray-200 font-medium rounded-lg text-md lg:px-3 lg:py-2 px-2.5 py-1.5 pe-4 text-center inline-flex items-center dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 lg:mt-8 space-x-2 ${styles.glasswhite}`}
               />
               <ButtonComponent
                 btnType="button"

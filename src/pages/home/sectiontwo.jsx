@@ -21,6 +21,8 @@ export default function SectionTwo() {
   ];
   const currentDate = new Date();
   const dayOfWeek = daysOfWeek[currentDate.getDay()]; // Get the day name
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <div className="w-full bg-white dark:bg-black">
@@ -35,8 +37,17 @@ export default function SectionTwo() {
               </div>
             </div>
             {/* Navbar */}
-            <div className=" w-full pt-12 ">
-              <NavbarComponent />
+            {isModalOpen && (
+              <div className="">
+                MODAL
+                <button onClick={() => setIsModalOpen(false)}>Close</button>
+              </div>
+            )}
+            <div className="w-full mt-12 mx-8">
+              <NavbarComponent
+                isModalOpen={isModalOpen}
+                setIsModalOpen={setIsModalOpen}
+              />
             </div>
             <div className="inline-flex gap-6 lg:gap-8 pt-12 ">
               <a className="w-max" href="">
@@ -46,7 +57,7 @@ export default function SectionTwo() {
                   alt=""
                 />
               </a>
-              <a  className="w-max" href="">
+              <a className="w-max" href="">
                 <img
                   className=" w-8 h-8 lg:w-10 lg:h-10"
                   src="./Assets/facebook.png"
