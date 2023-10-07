@@ -20,7 +20,7 @@ export default function SectionOne() {
       <div className="h-screen w-full bg-white dark:bg-black">
         <div className={`max-w-screen-2xl mx-auto h-full`}>
           <div className="flex flex-col justify-center items-center text-center h-full px-4 z-30 relative">
-            <div className="mb-4 text-4xl font-bold  text-black md:text-5xl lg:text-6xl dark:text-light-100 z-30 relative">
+            <div className="mb-4 text-4xl font-bold text-black md:text-5xl lg:text-6xl dark:text-light-100 z-30 relative">
               Muhammad Rafi Shidiq
             </div>
             <div className="mb-2 text-2xl font-normal font-montserrat tracking-tight text-black-300 md:text-3xl lg:text-4xl dark:text-light-300">
@@ -40,12 +40,12 @@ export default function SectionOne() {
               />
             </div>
             <Heading />
-            <div className="relative mt-4 flex flex-row gap-4 lg:gap-8">
+            <div className="relative mt-4 flex flex-row gap-6 lg:gap-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                className="lg:w-16 lg:h-16 w-12 h-12"
+                className="lg:w-14 lg:h-14 w-10 h-10"
                 viewBox="0 0 48 48"
               >
                 <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
@@ -58,7 +58,7 @@ export default function SectionOne() {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                className="lg:w-16 lg:h-16 w-12 h-12"
+                className="lg:w-14 lg:h-14 w-10 h-10"
                 viewBox="0 0 48 48"
               >
                 <rect width="36" height="36" x="6" y="6" fill="#1976d2"></rect>
@@ -73,14 +73,14 @@ export default function SectionOne() {
               </svg>
               <img
                 src="./logo192.png"
-                className="animate-spin lg:w-16 lg:h-16 w-12 h-12"
+                className="animate-spin lg:w-14 lg:h-14 w-10 h-10"
                 alt=""
               />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                className="lg:w-16 lg:h-16 w-12 h-12"
+                className="lg:w-14 lg:h-14 w-10 h-10"
                 viewBox="0 0 48 48"
               >
                 <path
@@ -92,7 +92,7 @@ export default function SectionOne() {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                className="lg:w-16 lg:h-16 w-12 h-12"
+                className="lg:w-14 lg:h-14 w-10 h-10"
                 viewBox="0 0 48 48"
               >
                 <path

@@ -22,12 +22,37 @@ export default function SectionTwo() {
   const currentDate = new Date();
   const dayOfWeek = daysOfWeek[currentDate.getDay()]; // Get the day name
 
+  const modalRef = useRef();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        setIsModalOpen(false);
+      }
+    }
+
+    function handleResize() {
+      if (window.innerWidth > 1024) {
+        setIsModalOpen(false);
+      }
+    }
+
+    // Bind the event listeners
+    document.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      // Unbind the event listeners on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
-      <div className="w-full bg-white dark:bg-black">
+      <div className="relative w-full bg-white dark:bg-black">
         <div className="max-w-screen-2xl mx-auto h-full px-4">
-          <div className="flex items-center justify-between ">
+          <div className="relative flex items-center justify-between">
             <div className=" w-max">
               <div className=" pt-12 text-lg font-poppins font-medium text-black-300 lg:text-xl dark:text-black-300 w-max">
                 Today is {dayOfWeek}
@@ -38,9 +63,11 @@ export default function SectionTwo() {
             </div>
             {/* Navbar */}
             {isModalOpen && (
-              <div className="">
+              <div
+                ref={modalRef}
+                className="absolute right-20 top-28 w-64 h-52 dark:bg-black-200 bg-light-100 rounded-xl p-2"
+              >
                 MODAL
-                <button onClick={() => setIsModalOpen(false)}>Close</button>
               </div>
             )}
             <div className="w-full mt-12 mx-8">
@@ -67,7 +94,7 @@ export default function SectionTwo() {
             </div>
           </div>
 
-          <div className="ms-4 mt-12">
+          <div className="mt-12">
             <div className="flex items-start space-x-4 mb-8">
               <img
                 className="w-16 h-16 rounded-full"
@@ -82,8 +109,8 @@ export default function SectionTwo() {
               </div>
             </div>
             <div className="flex flex-col md:flex-row gap-8">
-              <div className="w-full md:max-w-[18em]">
-                <div className="w-full h-[32rem] border"></div>
+              <div className="w-full md:max-w-[18em] border">
+                <div className="w-full h-[32rem]"></div>
                 <button
                   type="button"
                   className="inline-flex justify-center items-center text-black-100 dark:text-light-100 font-medium w-max  hover:bg-gray-100 border border-gray-200 rounded-lg text-md lg:px-3 lg:py-2 px-2.5 py-1.5 pe-4 text-center  dark:border-gray-700  dark:hover:bg-gray-700 mt-8 space-x-2"
@@ -107,7 +134,7 @@ export default function SectionTwo() {
                 </button>
               </div>
 
-              <div className="">
+              <div className="border">
                 <div className="">
                   <p
                     data-aos="fade"
@@ -129,6 +156,41 @@ export default function SectionTwo() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
+                  <div className="">
+                    <figure className="max-w-screen-md mb-12">
+                      <svg
+                        className="w-10 h-10 mb-3 text-gray-400 dark:text-gray-600"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 18 14"
+                      >
+                        <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                      </svg>
+                      <blockquote>
+                        <p className="text-2xl italic font-medium text-gray-900 dark:text-white">
+                          "Everything has its wonders, even darkness and
+                          silence, and I learn, whatever state I may be in,
+                          therein to be content."
+                        </p>
+                      </blockquote>
+                      <figcaption className="flex items-center mt-6 space-x-3">
+                        <img
+                          className="w-6 h-6 rounded-full"
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Helen_KellerA.jpg/220px-Helen_KellerA.jpg"
+                          alt="profile picture"
+                        />
+                        <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                          <cite className="pr-3 font-medium text-gray-900 dark:text-white">
+                            Hellen Keller
+                          </cite>
+                          <cite className="pl-3 text-sm text-secondary dark:text-gray-400">
+                            Author & Activist
+                          </cite>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </div>
             </div>
