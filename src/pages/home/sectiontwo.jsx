@@ -191,6 +191,7 @@ export default function SectionTwo() {
                       </figcaption>
                     </figure>
                   </div>
+                  {/* here */}
                 </div>
               </div>
             </div>
