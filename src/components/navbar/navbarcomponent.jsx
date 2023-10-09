@@ -10,20 +10,19 @@ export default function NavbarComponent({ isModalOpen, setIsModalOpen }) {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
-              class="w-6 h-6 dark:text-light-100"
+              className="w-6 h-6 dark:text-light-100"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
             </svg>
           </button>
         </div>
         <div className="h-14 hidden lg:flex items-center justify-center">
-          <ul class="flex items-center justify-center text-gray-900 dark:text-white gap-2 xl:gap-6">
+          <ul className="flex items-center justify-center text-gray-900 dark:text-white gap-2 xl:gap-6">
             <li className="">
               <button
                 type="button"

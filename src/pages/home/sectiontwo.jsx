@@ -130,14 +130,14 @@ export default function SectionTwo() {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     stroke="currentColor"
                     width="32"
                     height="32"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
                     />
                   </svg>
@@ -180,7 +180,7 @@ export default function SectionTwo() {
                         <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
                       </svg>
                       <blockquote>
-                        <p className="text-2xl italic font-medium text-gray-900 dark:text-white">
+                        <p className="text-2xl italic font-medium text-black dark:text-light-100">
                           "Everything has its wonders, even darkness and
                           silence, and I learn, whatever state I may be in,
                           therein to be content."
@@ -193,7 +193,7 @@ export default function SectionTwo() {
                           alt="profile picture"
                         />
                         <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                          <cite className="pr-3 font-medium text-gray-900 dark:text-white">
+                          <cite className="pr-3 font-medium text-black dark:text-light-100 ">
                             Hellen Keller
                           </cite>
                           <cite className="pl-3 text-sm text-secondary dark:text-gray-400">
@@ -207,7 +207,8 @@ export default function SectionTwo() {
               </div>
             </div>
 
-            <div className="flex flex-col xl:flex-row lg:gap-8">
+
+            <div className="flex flex-col xl:flex-row lg:gap-8 mt-12">
               <div className="xl:w-3/5">
                 <div className="mb-8 lg:mb-14">
 
@@ -216,19 +217,19 @@ export default function SectionTwo() {
                     <div className="h-min">
                       <svg
                         fill="#9ca3af"
-                        width="46px"
-                        height="46px"
+                        width="40px"
+                        height="40px"
                         viewBox="0 0 14 14"
                         role="img"
                         focusable="false"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                         <g
                           id="SVGRepo_tracerCarrier"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></g>
                         <g id="SVGRepo_iconCarrier">
                           <path d="m 12.499079,12.25525 c 0.0968,0 0.188377,-0.0436 0.249339,-0.11884 0.06096,-0.0752 0.08473,-0.17385 0.06473,-0.26853 l -0.202146,-0.95662 c 0.115125,-0.11137 0.187491,-0.26686 0.187491,-0.43975 0,-0.182 -0.08106,-0.34343 -0.206876,-0.45558 l 0,-3.32202 -0.810333,0.50146 0,2.82056 c -0.125815,0.11215 -0.2069,0.27358 -0.2069,0.45558 0,0.17291 0.07239,0.32841 0.187515,0.43975 l -0.20217,0.95662 c -0.02,0.0947 0.0038,0.19335 0.06473,0.26853 0.06096,0.0752 0.152539,0.11884 0.249339,0.11884 l 0.625281,0 z M 12.773741,4.75539 7.5021019,1.49209 C 7.3477151,1.39699 7.1736728,1.34925 6.9996305,1.34925 c -0.1740423,0 -0.3482077,0.0477 -0.5016586,0.14284 l -5.271713,3.2633 C 1.0854931,4.84249 0.99999905,4.99633 0.99999905,5.1619 c 0,0.1656 0.085494,0.31949 0.22625985,0.40673 l 5.2716883,3.26333 c 0.153451,0.0952 0.3276163,0.14284 0.5016586,0.14284 0.1740423,0 0.3481092,-0.0477 0.5024714,-0.14284 L 12.773741,5.56863 c 0.140766,-0.0872 0.22626,-0.24113 0.22626,-0.40673 0,-0.16557 -0.08549,-0.31946 -0.22626,-0.40651 z M 6.9996059,9.78508 c -0.3283798,0 -0.6488777,-0.0912 -0.928242,-0.26411 l -3.0750017,-1.90368 0,3.27796 c 0,0.97016 1.7931578,1.7555 4.0032436,1.7555 2.2108742,0 4.0038842,-0.78536 4.0038842,-1.7555 l 0,-3.27796 -3.0748786,1.90368 C 7.6492472,9.69388 7.3279857,9.78508 6.9996059,9.78508 Z"></path>
@@ -236,7 +237,7 @@ export default function SectionTwo() {
                       </svg>
                     </div>
 
-                    <div className="text-3xl font-medium text-ternary">
+                    <div className="text-2xl font-medium text-black dark:text-light-100">
                       Education
                     </div>
                   </div>
@@ -247,7 +248,7 @@ export default function SectionTwo() {
                     <ol className=" sm:flex">
                       <li className="w-full relative mb-6 sm:mb-0 min-w-[20rem]">
                         <div className="flex items-center h-5">
-                          <div className="absolute w-3 h-3 bg-gray-200 rounded-full left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                          <div className="absolute w-3 h-3 bg-gray-200 rounded-full left-1.5 border border-white dark:border-black dark:text-light-100 dark:bg-gray-700"></div>
                           <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div className="mt-3 sm:pr-8 flex items-start space-x-4">
@@ -257,7 +258,7 @@ export default function SectionTwo() {
                             alt=""
                           />
                           <div className="">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                            <h3 className="text-lg font-semibold text-black dark:text-light-100 ">
                               SMAN 2 Purwakarta
                             </h3>
                             <time className="block mb-2 text-sm font-normal  text-gray-400 dark:text-secondary">
@@ -276,7 +277,7 @@ export default function SectionTwo() {
 
                       <li className="w-full relative mb-6 sm:mb-0 min-w-[20rem]">
                         <div className="flex items-center h-5">
-                          <div className="absolute w-3 h-3 bg-gray-200 rounded-full left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                          <div className="absolute w-3 h-3 bg-gray-200 rounded-full left-1.5 border border-white dark:border-black dark:text-light-100 dark:bg-gray-700"></div>
                           <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div className="mt-3 sm:pr-8 flex items-start space-x-4">
@@ -286,7 +287,7 @@ export default function SectionTwo() {
                             alt=""
                           />
                           <div className="">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                            <h3 className="text-lg font-semibold text-black dark:text-light-100 ">
                               Universitas Pendidikan Indonesia
                             </h3>
                             <time className="block mb-2 text-sm font-normal  text-gray-400 dark:text-secondary">
@@ -321,11 +322,11 @@ export default function SectionTwo() {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                         <g
                           id="SVGRepo_tracerCarrier"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></g>
                         <g id="SVGRepo_iconCarrier">
                           {" "}
@@ -338,19 +339,19 @@ export default function SectionTwo() {
                             cy="12"
                             r="9"
                             stroke="#9ca3af"
-                            stroke-width="2"
+                            strokeWidth="2"
                           ></circle>{" "}
                         </g>
                       </svg>
                     </div>
 
-                    <div className="text-3xl font-medium text-ternary">
+                    <div className="text-3xl font-medium text-black dark:text-light-100">
                       Experience
                     </div>
                   </div>
                   <ol className="relative border-l border-gray-200 dark:border-gray-700 lg:ms-6 ms-2">
                     <li className="mb-10 ml-6 ">
-                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-black dark:text-light-100 dark:bg-gray-700"></div>
                       <div className="flex flex-row">
                         <img
                           className="w-12 h-12 rounded-lg me-4"
@@ -358,7 +359,7 @@ export default function SectionTwo() {
                           alt=""
                         />
                         <div className="">
-                          <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                          <h3 className="mb-1 text-lg font-semibold text-black dark:text-light-100 ">
                             Bangkit Academy led by Google, Gojek, Tokopedia, &
                             Traveloka.
                             <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3">
@@ -414,7 +415,7 @@ export default function SectionTwo() {
                       </div>
                       <a
                         href="#"
-                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-black dark:text-light-100 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                       >
                         <svg
                           className="w-3.5 h-3.5 mr-2.5"
@@ -430,8 +431,8 @@ export default function SectionTwo() {
                       </a>
                     </li>
                     <li className="mb-10 ml-6">
-                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                      <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-black dark:text-light-100 dark:bg-gray-700"></div>
+                      <h3 className="mb-1 text-lg font-semibold text-black dark:text-light-100 ">
                         Computer Networking, Assistant Lecturer
                         <span className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 ml-3">
                           Offline
@@ -451,9 +452,9 @@ export default function SectionTwo() {
                         skills.
                       </p>
                     </li>
-                    <li className="mb-10 ml-6">
-                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                      <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                    {/* <li className="mb-10 ml-6">
+                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-black dark:text-light-100 dark:bg-gray-700"></div>
+                      <h3 className="mb-1 text-lg font-semibold text-black dark:text-light-100 ">
                         Threat Intelligence. Direktorat Sistem dan Teknologi
                         Informasi (DikSTI UPI)
                         <span className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 ml-3">
@@ -472,11 +473,11 @@ export default function SectionTwo() {
                         Figma and we keep a parity between the two versions even
                         as we update the project.
                       </p>
-                    </li>
+                    </li> */}
 
-                    <li className="mb-10 ml-6">
-                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                      <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                    {/* <li className="mb-10 ml-6">
+                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-black dark:text-light-100 dark:bg-gray-700"></div>
+                      <h3 className="mb-1 text-lg font-semibold text-black dark:text-light-100 ">
                         Software Development, Assistant Lecturer
                         <span className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 ml-3">
                           Offline
@@ -494,7 +495,7 @@ export default function SectionTwo() {
                         my instructional, laboratory management, and
                         problem-solving abilities.
                       </p>
-                    </li>
+                    </li> */}
                   </ol>
                 </div>
               </div>
@@ -502,23 +503,23 @@ export default function SectionTwo() {
                 <div className="flex items-center mb-6 gap-4">
                   <div className="h-min">
                     <svg
-                      width="46px"
-                      height="46px"
+                      width="40px"
+                      height="40px"
                       viewBox="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                       <g
                         id="SVGRepo_tracerCarrier"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       ></g>
                       <g id="SVGRepo_iconCarrier">
                         {" "}
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M3.46447 3.46447C2 4.92893 2 7.28595 2 12C2 16.714 2 19.0711 3.46447 20.5355C4.92893 22 7.28595 22 12 22C16.714 22 19.0711 22 20.5355 20.5355C22 19.0711 22 16.714 22 12C22 7.28595 22 4.92893 20.5355 3.46447C19.0711 2 16.714 2 12 2C7.28595 2 4.92893 2 3.46447 3.46447ZM13.4881 6.44591C13.8882 6.55311 14.1256 6.96437 14.0184 7.36447L11.4302 17.0237C11.323 17.4238 10.9117 17.6613 10.5116 17.5541C10.1115 17.4468 9.8741 17.0356 9.98131 16.6355L12.5695 6.97624C12.6767 6.57614 13.088 6.3387 13.4881 6.44591ZM14.9697 8.46967C15.2626 8.17678 15.7374 8.17678 16.0303 8.46967L16.2387 8.67801C16.874 9.3133 17.4038 9.84308 17.7678 10.3202C18.1521 10.8238 18.4216 11.3559 18.4216 12C18.4216 12.6441 18.1521 13.1762 17.7678 13.6798C17.4038 14.1569 16.874 14.6867 16.2387 15.322L16.0303 15.5303C15.7374 15.8232 15.2626 15.8232 14.9697 15.5303C14.6768 15.2374 14.6768 14.7626 14.9697 14.4697L15.1412 14.2981C15.8229 13.6164 16.2797 13.1574 16.5753 12.7699C16.8577 12.3998 16.9216 12.1843 16.9216 12C16.9216 11.8157 16.8577 11.6002 16.5753 11.2301C16.2797 10.8426 15.8229 10.3836 15.1412 9.70191L14.9697 9.53033C14.6768 9.23744 14.6768 8.76257 14.9697 8.46967ZM7.96986 8.46967C8.26275 8.17678 8.73762 8.17678 9.03052 8.46967C9.32341 8.76257 9.32341 9.23744 9.03052 9.53033L8.85894 9.70191C8.17729 10.3836 7.72052 10.8426 7.42488 11.2301C7.14245 11.6002 7.07861 11.8157 7.07861 12C7.07861 12.1843 7.14245 12.3998 7.42488 12.7699C7.72052 13.1574 8.17729 13.6164 8.85894 14.2981L9.03052 14.4697C9.32341 14.7626 9.32341 15.2374 9.03052 15.5303C8.73762 15.8232 8.26275 15.8232 7.96986 15.5303L7.76151 15.322C7.12617 14.6867 6.59638 14.1569 6.23235 13.6798C5.84811 13.1762 5.57861 12.6441 5.57861 12C5.57861 11.3559 5.84811 10.8238 6.23235 10.3202C6.59638 9.84308 7.12617 9.31331 7.76151 8.67801L7.96986 8.46967Z"
                           fill="#9ca3af"
                         ></path>{" "}
@@ -526,54 +527,54 @@ export default function SectionTwo() {
                     </svg>
                   </div>
 
-                  <div className="text-3xl font-medium text-ternary">
+                  <div className="text-2xl font-medium text-black dark:text-light-100">
                     Skills
                   </div>
                 </div>
-                <div className="lang-and-fw flex flex-col flex-wrap">
+                <div className="lang-and-fw flex flex-col flex-wrap text-black dark:text-light-100">
                   {/* LANGUAGES */}
                   <div className="languages mb-4">
                     <p className="text-xl mb-2">Languages</p>
                     <div className="proficient-row flex flex-wrap mb-1">
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">JavaScript</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Typescript</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Flutter Dart</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">PHP</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Java</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Python</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">C</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">C++</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">HTML5</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">CSS3</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">SASS</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">R</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      {/* <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Golang</p>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 
@@ -581,39 +582,39 @@ export default function SectionTwo() {
                   <div className="frameworks mb-4">
                     <p className="text-xl mb-2">Frameworks/Libraries</p>
                     <div className="proficient-row flex flex-wrap mb-1">
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">React</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Next.js</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Express.js</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Flask</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Node</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Tailwind</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Laravel</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Bootsrap</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">MUI</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Flutter</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      {/* <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Prisma</p>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 
@@ -621,42 +622,42 @@ export default function SectionTwo() {
                   <div className="tools mb-4">
                     <p className="text-xl mb-2">Tools</p>
                     <div className="proficient-row flex flex-wrap mb-1">
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Visual Studio Code</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Github</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Vercel</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Google Cloud Platform</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Amazon Web Service</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Canva</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">MongoDB</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Figma</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">MySQL</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">MongoDB</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Firebase</p>
                       </div>
-                      <div className="p-1 border rounded-lg m-1 flex items-center h-8">
+                      {/* <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Postgree</p>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 
