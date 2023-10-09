@@ -6,6 +6,8 @@ import NavbarComponent from "../../components/navbar/navbarcomponent";
 
 export default function SectionTwo() {
   AOS.init();
+
+  // Time
   const [time, setTime] = useState(new Date());
   useEffect(() => {
     setInterval(() => setTime(new Date()), 1000);
@@ -20,27 +22,35 @@ export default function SectionTwo() {
     "Saturday",
   ];
   const currentDate = new Date();
-  const dayOfWeek = daysOfWeek[currentDate.getDay()]; // Get the day name
+  const dayOfWeek = daysOfWeek[currentDate.getDay()];
+
+  // Read More
+  const [isContentExpanded, setIsContentExpanded] = useState(false);
+  const toggleContent = () => {
+    setIsContentExpanded(!isContentExpanded);
+  };
+  const [isContentExpanded2, setIsContentExpanded2] = useState(false);
+  const toggleContent2 = () => {
+    setIsContentExpanded2(!isContentExpanded2);
+  };
 
   const modalRef = useRef();
   const [isModalOpen, setIsModalOpen] = useState(false);
   useEffect(() => {
+    // Modal Close
     function handleClickOutside(event) {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
         setIsModalOpen(false);
       }
     }
-
     function handleResize() {
       if (window.innerWidth > 1024) {
         setIsModalOpen(false);
       }
     }
-
     // Bind the event listeners
     document.addEventListener("mousedown", handleClickOutside);
     window.addEventListener("resize", handleResize);
-
     return () => {
       // Unbind the event listeners on clean up
       document.removeEventListener("mousedown", handleClickOutside);
@@ -52,8 +62,6 @@ export default function SectionTwo() {
     <>
       <div className="relative w-full bg-white dark:bg-black">
         <div className="max-w-screen-2xl mx-auto h-full px-4">
-          
-
           <div className="relative flex items-center justify-between">
             {/* Time */}
             <div className=" w-max">
@@ -98,9 +106,7 @@ export default function SectionTwo() {
             </div>
           </div>
 
-          
           <div className="mt-12">
-
             {/* Profile */}
             <div className="flex items-start space-x-4 mb-8">
               <img
@@ -110,15 +116,13 @@ export default function SectionTwo() {
               />
               <div className="text-xl font-medium dark:text-white">
                 <div>Muhammad Rafi Shidiq</div>
-                <div className="text-base text-gray-500 dark:text-gray-400">
+                <div className="text-base text-gray-500 dark:text-light-100">
                   Front-end / Fullstack Developer
                 </div>
               </div>
             </div>
 
-            
             <div className="flex flex-col md:flex-row gap-8">
-
               {/* Sidebar */}
               <div className="w-full md:max-w-[18em] border p-4 h-full">
                 <div className="w-full h-28 md:h-[32rem]"></div>
@@ -171,7 +175,7 @@ export default function SectionTwo() {
                   <div className="">
                     <figure className="max-w-screen-md mb-12">
                       <svg
-                        className="w-10 h-10 mb-3 text-gray-400 dark:text-gray-600"
+                        className="w-10 h-10 mb-3 text-light-100 dark:text-gray-600"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -180,7 +184,7 @@ export default function SectionTwo() {
                         <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
                       </svg>
                       <blockquote>
-                        <p className="text-2xl italic font-medium text-black dark:text-light-100">
+                        <p className="text-2xl italic font-medium text-black-200 dark:text-light-100">
                           "Everything has its wonders, even darkness and
                           silence, and I learn, whatever state I may be in,
                           therein to be content."
@@ -193,10 +197,10 @@ export default function SectionTwo() {
                           alt="profile picture"
                         />
                         <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                          <cite className="pr-3 font-medium text-black dark:text-light-100 ">
+                          <cite className="pr-3 font-medium text-black-100 dark:text-light-100 ">
                             Hellen Keller
                           </cite>
-                          <cite className="pl-3 text-sm text-secondary dark:text-gray-400">
+                          <cite className="pl-3 text-sm text-black-100 dark:text-light-100">
                             Author & Activist
                           </cite>
                         </div>
@@ -207,11 +211,9 @@ export default function SectionTwo() {
               </div>
             </div>
 
-
             <div className="flex flex-col xl:flex-row lg:gap-8 mt-12">
               <div className="xl:w-3/5">
                 <div className="mb-8 lg:mb-14">
-
                   {/* Education Icon */}
                   <div className="flex items-center mb-6 gap-4">
                     <div className="h-min">
@@ -237,7 +239,7 @@ export default function SectionTwo() {
                       </svg>
                     </div>
 
-                    <div className="text-2xl font-medium text-black dark:text-light-100">
+                    <div className="text-2xl font-medium text-black-100 dark:text-light-100">
                       Education
                     </div>
                   </div>
@@ -258,16 +260,16 @@ export default function SectionTwo() {
                             alt=""
                           />
                           <div className="">
-                            <h3 className="text-lg font-semibold text-black dark:text-light-100 ">
+                            <h3 className="text-lg font-semibold text-black-100 dark:text-light-100 ">
                               SMAN 2 Purwakarta
                             </h3>
-                            <time className="block mb-2 text-sm font-normal  text-gray-400 dark:text-secondary">
+                            <time className="block mb-2 text-sm font-normal  dark:text-light-100 text-black-300">
                               2017-2020 · Graduated · Science Major
                             </time>
-                            {/* <div className="text-sm text-secondary dark:text-gray-400 font-medium ">
+                            {/* <div className="text-sm text-black-100 dark:text-light-100 font-medium ">
                           
                         </div> */}
-                            <p className="text-base font-normal text-secondary dark:text-gray-400">
+                            <p className="text-base font-normal text-black-100 dark:text-light-100">
                               English Club SMANDA; Information & Technology Club
                               Assistant;
                             </p>
@@ -287,17 +289,17 @@ export default function SectionTwo() {
                             alt=""
                           />
                           <div className="">
-                            <h3 className="text-lg font-semibold text-black dark:text-light-100 ">
+                            <h3 className="text-lg font-semibold text-black-100 dark:text-light-100 ">
                               Universitas Pendidikan Indonesia
                             </h3>
-                            <time className="block mb-2 text-sm font-normal  text-gray-400 dark:text-secondary">
+                            <time className="block mb-2 text-sm font-normal  dark:text-light-100 text-black-300">
                               2020 - now · Ungraduated · Bachelor Degree ·
                               Computer Science
                             </time>
-                            <div className="text-sm text-secondary dark:text-gray-400 font-medium ">
+                            <div className="text-sm text-black-100 dark:text-light-100 font-medium ">
                               IPK: 3.85 of 4
                             </div>
-                            <p className="text-base font-normal text-secondary dark:text-gray-400">
+                            <p className="text-base font-normal text-black-100 dark:text-light-100">
                               Active Project Collaboration; Gemastik 2022
                               Competition; Assistant Lecturer & Voluntary;
                               Programming Organization OSTRIC; Dinamik UPI
@@ -311,7 +313,6 @@ export default function SectionTwo() {
                 </div>
 
                 <div className="">
-
                   {/* Experience Icon */}
                   <div className="flex items-center mb-6 gap-4">
                     <div className="h-min">
@@ -345,7 +346,7 @@ export default function SectionTwo() {
                       </svg>
                     </div>
 
-                    <div className="text-3xl font-medium text-black dark:text-light-100">
+                    <div className="text-3xl font-medium text-black-100 dark:text-light-100">
                       Experience
                     </div>
                   </div>
@@ -355,46 +356,110 @@ export default function SectionTwo() {
                       <div className="flex flex-row">
                         <img
                           className="w-12 h-12 rounded-lg me-4"
-                          src="/Assets/bangkit-logo.png"
+                          src="/Assets/telkom-logo.jpg"
                           alt=""
                         />
                         <div className="">
-                          <h3 className="mb-1 text-lg font-semibold text-black dark:text-light-100 ">
-                            Bangkit Academy led by Google, Gojek, Tokopedia, &
-                            Traveloka.
+                          <h3 className="mb-1 text-lg font-semibold text-black-100 dark:text-light-100 ">
+                            System Analyst - HCIS
                             <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3">
                               Latest
                             </span>
                             <span className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 ml-3">
+                              Offline
+                            </span>
+                          </h3>
+                          <time className="block mb-2 text-sm font-normal  dark:text-light-200 text-black-300">
+                            Sep 2023 - Now · Bandung, Indonesia · Magang
+                          </time>
+                        </div>
+                      </div>
+
+                      <p
+                        className={`text-base font-normal text-black-100 dark:text-light-100 ${
+                          isContentExpanded2 ? "" : "truncate"
+                        }`}
+                      >
+                        HCBP (Human Capital Business Partner) - Managed
+                        end-to-end HC processes, from analysis, design,
+                        development, to implementation - Prepared application
+                        business requirements and documentation for HCIS
+                        projects - Maintained and updated organization and
+                        position data and attributes - Resolved HR application
+                        issues and troubles - Ensuring IT General Control
+                        compliance, fostering good corporate governance through
+                        technology integration, and driving organizational
+                        efficiency. - Project designing, management, prototyping
+                        with MIRO
+                      </p>
+
+                      {!isContentExpanded2 && (
+                        <button
+                          onClick={toggleContent2}
+                          className="dark:text-light-200 hover:underline cursor-pointer mb-4 italic"
+                        >
+                          (Read More)
+                        </button>
+                      )}
+                    </li>
+
+                    <li className="mb-10 ml-6 ">
+                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-black dark:text-light-100 dark:bg-gray-700"></div>
+                      <div className="flex flex-row">
+                        <img
+                          className="w-12 h-12 rounded-lg me-4"
+                          src="/Assets/bangkit-logo.png"
+                          alt=""
+                        />
+                        <div className="">
+                          <h3 className="mb-1 text-lg font-semibold text-black-100 dark:text-light-100 ">
+                            Bangkit Academy led by Google, Gojek, Tokopedia, &
+                            Traveloka.
+                            <span className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 ml-3">
                               Online
                             </span>
                           </h3>
-                          <time className="block mb-2 text-sm font-normal  text-gray-400 dark:text-secondary">
+                          <time className="block mb-2 text-sm font-normal dark:text-light-200 text-black-300">
                             Feb 2023 - Jul 2023 · Jakarta, Indonesia · Jarak
                             jauh
                           </time>
-                          <div className="text-sm text-secondary dark:text-gray-400 font-medium ">
+                          <div className="text-sm text-black-100 dark:text-light-100 font-medium ">
                             Graduated with Distinction
                           </div>
                         </div>
                       </div>
 
-                      <p className="mb-4 text-base font-normal text-secondary dark:text-gray-400">
-                        Over the past six months, I've diligently pursued
-                        mastery in Google Cloud Technology and Backend
-                        Development through comprehensive online courses on
-                        platforms like Coursera and Dicoding, along with
-                        expert-led sessions. I've also honed my soft skills and
-                        English proficiency to bolster my professionalism.
-                        Hands-on experience came from dedicated practice in
-                        Google Cloud through the CloudSkillBoost lab. A
-                        testament to my knowledge and teamwork, I successfully
-                        completed a Capstone Project within a month, where our
-                        collaborative effort resulted in the creation of a
-                        machine learning integrated mobile application. This
-                        innovative app enables users to monitor their daily
-                        nutrition intake effectively using TensorFlow and cloud
-                        technology.
+                      <p className="mb-4 text-base font-normal text-black-100 dark:text-light-100">
+                        <p
+                          className={` text-base font-normal text-black-100 dark:text-light-100 ${
+                            isContentExpanded ? "" : "truncate"
+                          }`}
+                        >
+                          Over the past six months, I've diligently pursued
+                          mastery in Google Cloud Technology and Backend
+                          Development through comprehensive online courses on
+                          platforms like Coursera and Dicoding, along with
+                          expert-led sessions. I've also honed my soft skills
+                          and English proficiency to bolster my professionalism.
+                          Hands-on experience came from dedicated practice in
+                          Google Cloud through the CloudSkillBoost lab. A
+                          testament to my knowledge and teamwork, I successfully
+                          completed a Capstone Project within a month, where our
+                          collaborative effort resulted in the creation of a
+                          machine learning integrated mobile application. This
+                          innovative app enables users to monitor their daily
+                          nutrition intake effectively using TensorFlow and
+                          cloud technology.
+                        </p>
+
+                        {!isContentExpanded && (
+                          <button
+                            onClick={toggleContent}
+                            className="dark:text-light-200 hover:underline cursor-pointer mb-4 italic"
+                          >
+                            (Read More)
+                          </button>
+                        )}
                       </p>
                       <div className="flex gap-4 mb-4 ">
                         <img
@@ -415,7 +480,7 @@ export default function SectionTwo() {
                       </div>
                       <a
                         href="#"
-                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-black dark:text-light-100 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-black-100 dark:text-light-100 border border-gray-200 rounded-lg hover:bg-gray-100 dark:bg-black-200"
                       >
                         <svg
                           className="w-3.5 h-3.5 mr-2.5"
@@ -432,17 +497,17 @@ export default function SectionTwo() {
                     </li>
                     <li className="mb-10 ml-6">
                       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-black dark:text-light-100 dark:bg-gray-700"></div>
-                      <h3 className="mb-1 text-lg font-semibold text-black dark:text-light-100 ">
-                        Computer Networking, Assistant Lecturer
+                      <h3 className="mb-1 text-lg font-semibold text-black-100 dark:text-light-100 ">
+                        Assistant Lecturer
                         <span className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 ml-3">
                           Offline
                         </span>
                       </h3>
-                      <time className="block mb-2 text-sm font-normal  text-gray-400 dark:text-secondary">
+                      <time className="block mb-2 text-sm font-normal  dark:text-light-200 text-black-300">
                         Feb 2022 - Mei 2022 · Bandung, Jawa Barat, Indonesia ·
                         Di lokasi
                       </time>
-                      <p className="text-base font-normal text-secondary dark:text-gray-400">
+                      <p className="text-base font-normal text-black-100 dark:text-light-100">
                         I served as a Computer Networking Assistant Lecturer,
                         responsible for creating engaging lesson plans,
                         conducting practical sessions, supervising high
@@ -452,50 +517,6 @@ export default function SectionTwo() {
                         skills.
                       </p>
                     </li>
-                    {/* <li className="mb-10 ml-6">
-                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-black dark:text-light-100 dark:bg-gray-700"></div>
-                      <h3 className="mb-1 text-lg font-semibold text-black dark:text-light-100 ">
-                        Threat Intelligence. Direktorat Sistem dan Teknologi
-                        Informasi (DikSTI UPI)
-                        <span className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 ml-3">
-                          Remote
-                        </span>
-                        <span className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 ml-3">
-                          Intern
-                        </span>
-                      </h3>
-                      <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                        Apr 2023 - Mei 2023 · Bandung, Jawa Barat, Indonesia ·
-                        Jarak jauh
-                      </time>
-                      <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                        All of the pages and components are first designed in
-                        Figma and we keep a parity between the two versions even
-                        as we update the project.
-                      </p>
-                    </li> */}
-
-                    {/* <li className="mb-10 ml-6">
-                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-black dark:text-light-100 dark:bg-gray-700"></div>
-                      <h3 className="mb-1 text-lg font-semibold text-black dark:text-light-100 ">
-                        Software Development, Assistant Lecturer
-                        <span className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 ml-3">
-                          Offline
-                        </span>
-                      </h3>
-                      <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                        Feb 2022 - Mei 2022 · Bandung, Jawa Barat, Indonesia ·
-                        Di lokasi
-                      </time>
-                      <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                        In the same period, I also worked as a Software
-                        Development Assistant Lecturer, delivering tutorials on
-                        SDLC, UML, and DFD. I maintained the computer laboratory
-                        and ensured optimal learning conditions. This role honed
-                        my instructional, laboratory management, and
-                        problem-solving abilities.
-                      </p>
-                    </li> */}
                   </ol>
                 </div>
               </div>
@@ -527,52 +548,52 @@ export default function SectionTwo() {
                     </svg>
                   </div>
 
-                  <div className="text-2xl font-medium text-black dark:text-light-100">
+                  <div className="text-2xl font-medium text-black-100 dark:text-light-100">
                     Skills
                   </div>
                 </div>
-                <div className="lang-and-fw flex flex-col flex-wrap text-black dark:text-light-100">
+                <div className="lang-and-fw flex flex-col flex-wrap text-black-100 dark:text-light-100">
                   {/* LANGUAGES */}
                   <div className="languages mb-4">
                     <p className="text-xl mb-2">Languages</p>
                     <div className="proficient-row flex flex-wrap mb-1">
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">JavaScript</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Typescript</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Flutter Dart</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">PHP</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Java</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Python</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">C</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">C++</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
-                        <p className="text-base">HTML5</p>
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
+                        <p className="text-base">HTML</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
-                        <p className="text-base">CSS3</p>
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
+                        <p className="text-base">CSS</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">SASS</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">R</p>
                       </div>
-                      {/* <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      {/* <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Golang</p>
                       </div> */}
                     </div>
@@ -582,37 +603,46 @@ export default function SectionTwo() {
                   <div className="frameworks mb-4">
                     <p className="text-xl mb-2">Frameworks/Libraries</p>
                     <div className="proficient-row flex flex-wrap mb-1">
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">React</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Next.js</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Express.js</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Flask</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
-                        <p className="text-base">Node</p>
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
+                        <p className="text-base">Node.js</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Tailwind</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Laravel</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Bootsrap</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">MUI</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
+                        <p className="text-base">Material Tailwind</p>
+                      </div>
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
+                        <p className="text-base">Flowbites</p>
+                      </div>
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
+                        <p className="text-base">NPM</p>
+                      </div>
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Flutter</p>
                       </div>
-                      {/* <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      {/* <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Prisma</p>
                       </div> */}
                     </div>
@@ -622,40 +652,49 @@ export default function SectionTwo() {
                   <div className="tools mb-4">
                     <p className="text-xl mb-2">Tools</p>
                     <div className="proficient-row flex flex-wrap mb-1">
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Visual Studio Code</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
-                        <p className="text-base">Github</p>
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
+                        <p className="text-base">Git & Github</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
+                        <p className="text-base">Miro</p>
+                      </div>
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
+                        <p className="text-base">Clickup</p>
+                      </div>
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
+                        <p className="text-base">Trello</p>
+                      </div>
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Vercel</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Google Cloud Platform</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Amazon Web Service</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Canva</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">MongoDB</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Figma</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">MySQL</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">MongoDB</p>
                       </div>
-                      <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Firebase</p>
                       </div>
-                      {/* <div className="p-1 border border-light-300 rounded-lg m-1 flex items-center h-8">
+                      {/* <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Postgree</p>
                       </div> */}
                     </div>
