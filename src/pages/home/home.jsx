@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { Outlet, Link } from "react-router-dom";
 
 // Styles Module
 import styles from "./style.module.scss";
@@ -15,6 +16,10 @@ const Home = () => {
       <div>
         <SectionOne />
         <SectionTwo />
+        {/* OUTLET */}
+        <div>
+          <Outlet />
+        </div>
       </div>
     </>
   );
