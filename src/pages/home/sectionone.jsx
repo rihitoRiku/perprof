@@ -15,12 +15,12 @@ export default function SectionOne() {
     <>
       {/* <div className={`w-24`}></div> */}
       <div
-        className={`max-w-screen-2xl w-full absolute top-0 left-0 right-0 bottom-0 mx-auto h-screen flex items-center justify-center bg-cover ${styles.bgHeader} bg-center bg-no-repeat z-10`}
+        className={`max-w-screen-2xl w-full absolute top-0 left-0 right-0 bottom-0 mx-auto h-screen flex items-center justify-center bg-cover ${styles.bgHeader} bg-center bg-no-repeat`}
       ></div>
       <div className="h-screen w-full bg-white dark:bg-black">
         <div className={`max-w-screen-2xl mx-auto h-full`}>
           <div className="flex flex-col justify-center items-center text-center h-full px-4 z-30 relative">
-            <div className="mb-4 text-4xl font-bold  text-black md:text-5xl lg:text-6xl dark:text-light-100 z-30 relative">
+            <div className="mb-4 text-4xl font-bold text-black md:text-5xl lg:text-6xl dark:text-light-100 z-30 relative">
               Muhammad Rafi Shidiq
             </div>
             <div className="mb-2 text-2xl font-normal font-montserrat tracking-tight text-black-300 md:text-3xl lg:text-4xl dark:text-light-300">
@@ -40,12 +40,12 @@ export default function SectionOne() {
               />
             </div>
             <Heading />
-            <div className="relative mt-4 flex flex-row gap-4 lg:gap-8">
+            <div className="relative mt-4 flex flex-row gap-6 lg:gap-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                className="lg:w-16 lg:h-16 w-12 h-12"
+                className="lg:w-14 lg:h-14 w-10 h-10"
                 viewBox="0 0 48 48"
               >
                 <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
@@ -58,7 +58,7 @@ export default function SectionOne() {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                className="lg:w-16 lg:h-16 w-12 h-12"
+                className="lg:w-14 lg:h-14 w-10 h-10"
                 viewBox="0 0 48 48"
               >
                 <rect width="36" height="36" x="6" y="6" fill="#1976d2"></rect>
@@ -73,14 +73,14 @@ export default function SectionOne() {
               </svg>
               <img
                 src="./logo192.png"
-                className="animate-spin lg:w-16 lg:h-16 w-12 h-12"
+                className="animate-spin lg:w-14 lg:h-14 w-10 h-10"
                 alt=""
               />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                className="lg:w-16 lg:h-16 w-12 h-12"
+                className="lg:w-14 lg:h-14 w-10 h-10"
                 viewBox="0 0 48 48"
               >
                 <path
@@ -92,7 +92,7 @@ export default function SectionOne() {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                className="lg:w-16 lg:h-16 w-12 h-12"
+                className="lg:w-14 lg:h-14 w-10 h-10"
                 viewBox="0 0 48 48"
               >
                 <path
@@ -102,14 +102,17 @@ export default function SectionOne() {
               </svg>
             </div>
             <div className="relative top-16 xl:top-24 flex lg:flex-row flex-col gap-4 items-center justify-center">
-              <ButtonComponent
-                btnType="button"
-                svgPath="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"
-                viewBox="0 0 64 64"
-                text="View Github"
-                fillOne="#083344"
-                additionalClasses="w-max text-gray-900 bg-white dark:bg-black-100 hover:bg-gray-100 border border-gray-200 font-medium rounded-lg text-md lg:px-3 lg:py-2 px-2.5 py-1.5 pe-4 text-center inline-flex items-center dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 lg:mt-8 space-x-2"
-              />
+              <a href="https://github.com/darkRihito" target="_blank">
+                <ButtonComponent
+                  btnType="button"
+                  svgPath="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"
+                  viewBox="0 0 64 64"
+                  text="View Github"
+                  fillOne="#083344"
+                  additionalClasses={`w-max text-gray-900 border border-gray-200 font-medium rounded-lg text-md lg:px-3 lg:py-2 px-2.5 py-1.5 pe-4 text-center inline-flex items-center dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 lg:mt-8 space-x-2 ${styles.glasswhite}`}
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-rafi-shidiq-b67122272/" target="_blank">
               <ButtonComponent
                 btnType="button"
                 svgPath="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
@@ -120,6 +123,7 @@ export default function SectionOne() {
                 text="Connect with LinkedIn"
                 additionalClasses="text-gray-900 font-normal rounded-lg text-md px-3 py-2 pe-4 text-center inline-flex items-center lg:mt-8 space-x-2 dark:text-white"
               />
+              </a>
             </div>
           </div>
         </div>
