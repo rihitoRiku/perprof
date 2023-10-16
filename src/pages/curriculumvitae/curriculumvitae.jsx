@@ -1,6 +1,39 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 export default function CurriculumVitae() {
+  // Read More
+  const [isContentExpanded, setIsContentExpanded] = useState(false);
+  const toggleContent = () => {
+    setIsContentExpanded(!isContentExpanded);
+  };
+  const [isContentExpanded2, setIsContentExpanded2] = useState(false);
+  const toggleContent2 = () => {
+    setIsContentExpanded2(!isContentExpanded2);
+  };
+
+  const modalRef = useRef();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  useEffect(() => {
+    // Modal Close
+    function handleClickOutside(event) {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        setIsModalOpen(false);
+      }
+    }
+    function handleResize() {
+      if (window.innerWidth > 1024) {
+        setIsModalOpen(false);
+      }
+    }
+    // Bind the event listeners
+    document.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      // Unbind the event listeners on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <div className="">
