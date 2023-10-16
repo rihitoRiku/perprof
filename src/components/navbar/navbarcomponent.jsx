@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< Updated upstream
 import {
   Navbar,
   MobileNav,
@@ -62,6 +63,9 @@ function NavListMenu() {
       </MenuItem>
     </a>
   ));
+=======
+import { Link } from "react-router-dom";
+>>>>>>> Stashed changes
 
   return (
     <React.Fragment>
@@ -76,6 +80,7 @@ function NavListMenu() {
                   isMenuOpen ? "rotate-180" : ""
                 }`}
               />
+<<<<<<< Updated upstream
             </MenuItem>
           </Typography>
         </MenuHandler>
@@ -90,6 +95,67 @@ function NavListMenu() {
           </Card>
           <ul className="col-span-4 flex w-full flex-col gap-1">
             {renderItems}
+=======
+            </svg>
+          </button>
+        </div>
+        <div className="h-14 hidden lg:flex items-center justify-center">
+          <ul className="flex items-center justify-center text-gray-900 dark:text-white gap-2 xl:gap-6">
+            <Link to="/">
+              <li className="">
+                <button
+                  type="button"
+                  className="text-gray-800 dark:text-white bg-none hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                >
+                  Home
+                </button>
+              </li>
+            </Link>
+
+            <Link to="project">
+              <li>
+                <button
+                  type="button"
+                  className="text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                >
+                  Project
+                </button>
+              </li>
+            </Link>
+
+            <Link to="certification">
+              <li>
+                <button
+                  type="button"
+                  className="text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                >
+                  Certification
+                </button>
+              </li>
+            </Link>
+
+            <Link to="blog">
+              <li>
+                <button
+                  type="button"
+                  className="text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                >
+                  Blog
+                </button>
+              </li>
+            </Link>
+
+            <Link to="roadmap">
+              <li>
+                <button
+                  type="button"
+                  className="text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                >
+                  Roadmap
+                </button>
+              </li>
+            </Link>
+>>>>>>> Stashed changes
           </ul>
         </MenuList>
       </Menu>

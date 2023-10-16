@@ -25,7 +25,12 @@ export default function SectionTwo() {
     <>
       <div className="w-full bg-white dark:bg-black">
         <div className="max-w-screen-2xl mx-auto h-full px-4">
+<<<<<<< Updated upstream
           <div className="flex items-center justify-between ">
+=======
+          <div className="relative flex items-center justify-between">
+            {/* Time */}
+>>>>>>> Stashed changes
             <div className=" w-max">
               <div className=" pt-12 text-lg font-poppins font-medium text-black-300 lg:text-xl dark:text-black-300 w-max">
                 Today is {dayOfWeek}
@@ -55,6 +60,7 @@ export default function SectionTwo() {
               </a>
             </div>
           </div>
+<<<<<<< Updated upstream
 
           <div className="ms-4 mt-12">
             <div className="flex items-start space-x-4 mb-8">
@@ -124,6 +130,9 @@ export default function SectionTwo() {
           </div>
 
           <div className="flex items-center justify-center"></div>
+=======
+          {/* <div className="flex items-center justify-center"></div> */}
+>>>>>>> Stashed changes
         </div>
       </div>
     </>

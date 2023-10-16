@@ -1,11 +1,13 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/home";
+import Project from "./pages/project/project";
 import Layout from "./pages/layout";
 import NoPage from "./pages/nopage";
 import Test from "./pages/test/test";
 import "./App.css";
 import { useEffect } from "react";
+import CurriculumVitae from "./pages/curriculumvitae/curriculumvitae";
 
 function App({ Component, pageProps }) {
   useEffect(() => {
@@ -26,9 +28,11 @@ function App({ Component, pageProps }) {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout {...pageProps}/>}> 
-          <Route index element={<Home />} />
-          {/* <Route path="/" element={< />} /> */}
+        <Route path="/" element={<Layout {...pageProps} />}>
+          <Route path="/" element={<Home {...pageProps} />}>
+            <Route index element={<CurriculumVitae />} />
+            <Route path="project" element={<Project />} />
+          </Route>
           <Route path="/test" element={<Test />} />
           <Route path="*" element={<NoPage />} />
         </Route>
