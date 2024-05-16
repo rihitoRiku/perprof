@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import CvPdf from '../../files/CV_MuhammadRafiShidiq.pdf'
 
 export default function CurriculumVitae() {
   // Read More
@@ -38,7 +39,7 @@ export default function CurriculumVitae() {
     <>
       <div className="">
         <div className="relative w-full bg-white dark:bg-black">
-          <div className="max-w-screen-2xl mx-auto h-full px-4">
+          <div className="max-w-screen-2xl mx-auto h-full px-4 py-4">
             {/* Profile */}
             <div className="flex items-start space-x-4 mb-8">
               <img
@@ -58,29 +59,63 @@ export default function CurriculumVitae() {
               {/* Sidebar */}
               <div className="w-full md:max-w-[18em] border rounded-xl p-4 h-full">
                 <div className="w-full h-28 md:h-[32rem]"></div>
-                <a href="https://bit.ly/ShidiqProfessional" target="_blank">
-                  <button
-                    type="button"
-                    className="inline-flex justify-center items-center text-black-100 dark:text-light-100 font-medium w-max  hover:bg-gray-100 border border-gray-200 rounded-lg text-md lg:px-3 lg:py-2 px-2.5 py-1.5 pe-4 text-center  dark:border-gray-700  dark:hover:bg-gray-700 mt-8 space-x-2"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      width="32"
-                      height="32"
+                <div className="flex gap-2">
+                  <a href={CvPdf} download="Example-PDF-document" rel="noreferrer" target="_blank">
+                    <button
+                      type="button"
+                      className="inline-flex justify-center items-center text-black-100 dark:text-light-100 font-medium w-max  hover:bg-gray-100 border border-gray-200 rounded-lg text-md lg:px-3 lg:py-2 px-2.5 py-1.5 pe-4 text-center  dark:border-gray-700  dark:hover:bg-gray-700 mt-8 space-x-2"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
-                      />
-                    </svg>
-                    <span>Download CV</span>
-                  </button>
-                </a>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                        width="28"
+                        height="28"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+                        />
+                      </svg>
+                      <span>CV</span>
+                    </button>
+                  </a>
+                  <a href="https://bit.ly/ShidiqProfessional" target="_blank">
+                    <button
+                      type="button"
+                      className="inline-flex justify-center items-center text-black-100 dark:text-light-100 font-medium w-max  hover:bg-gray-100 border border-gray-200 rounded-lg text-md lg:px-3 lg:py-2 px-2.5 py-1.5 pe-4 text-center  dark:border-gray-700  dark:hover:bg-gray-700 mt-8 space-x-2"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        width="28"
+                        height="28"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          {" "}
+                          <path
+                            d="M3 13.6493C3 16.6044 5.41766 19 8.4 19L16.5 19C18.9853 19 21 16.9839 21 14.4969C21 12.6503 19.8893 10.9449 18.3 10.25C18.1317 7.32251 15.684 5 12.6893 5C10.3514 5 8.34694 6.48637 7.5 8.5C4.8 8.9375 3 11.2001 3 13.6493Z"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>{" "}
+                        </g>
+                      </svg>
+                      <span>Browse Drive</span>
+                    </button>
+                  </a>
+                </div>
               </div>
 
               {/* Article Content */}
@@ -90,17 +125,24 @@ export default function CurriculumVitae() {
                     data-aos="fade"
                     className="text-black-100 dark:text-light-100"
                   >
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Autem fugiat, magnam quia nihil distinctio officia
-                    consequatur eum, ea doloremque esse eveniet ad maxime natus
-                    voluptas architecto. Voluptates mollitia sunt doloremque cum
-                    ducimus, optio officia at?
+                    Bring a passion for technology with expertise in JavaScript,
+                    React, Node.js, excelling in both front-end and back-end
+                    development, UI/UX design, and cloud technologies.
+                    Prioritizes user-centric, visually appealing, and functional
+                    applications. Possess strong project management and
+                    leadership skills, effectively coordinating teams, setting
+                    milestones, without forgeting software quality assurance
+                    which ensuring projects meet top-quality standards. Beyond,
+                    I'm deeply engaged in video games, anime, and writing, which
+                    complements my interests in art, graphic design, and
+                    philosophy, enabling me to infuse creativity into every
+                    project.
                   </p>
                 </div>
                 <div className="mt-6">
                   <iframe
                     className="w-full lg:max-w-xl h-64 rounded-lg sm:h-96 mb-8 transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale"
-                    src="https://www.youtube.com/embed/kzdJkT4kp-A"
+                    src="https://www.youtube.com/embed/ZRtdQ81jPUQ"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

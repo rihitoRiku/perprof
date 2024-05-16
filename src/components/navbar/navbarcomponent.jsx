@@ -74,7 +74,7 @@ export default function NavbarComponent({ isModalOpen, setIsModalOpen }) {
                   type="button"
                   className="text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
                 >
-                  Roadmap
+                  Get To Know
                 </button>
               </li>
             </Link>
