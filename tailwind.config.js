@@ -8,15 +8,6 @@ module.exports = withMT ({
   ],
   theme: {
     extend: {
-      animation: {
-        spin: 'spin 5s linear infinite', // Adjust "5s" to your desired speed
-      },
-      keyframes: {
-        spin: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
-        },
-      },
       fontFamily: {
         inter: ['"Inter"', "sans-serif"],
         montserrat: ['"Montserrat"', "sans-serif"],
@@ -24,6 +15,7 @@ module.exports = withMT ({
         "pt-serif": ['"PT Serif"', "serif"],
         roboto: ['"Roboto"', "sans-serif"],
         ubuntu: ['"Ubuntu"', "sans-serif"],
+        "parisienne": ['"Parisienne"', "cursive"],
       },
       colors: {
         transparent: "transparent",
@@ -42,6 +34,25 @@ module.exports = withMT ({
         secondary: "#",
         ternary: "#",
         ternary2: "#",
+      },
+      keyframes: {
+        slideInNav: {
+          "0%": { opacity: 0, transform: "translateX(-20px)" },
+          "100%": { opacity: 0.6, transform: "translateX(0)" },
+        },
+        zoom: {
+          "0%": { opacity: 0, transform: "scale(80%)" },
+          "100%": { opacity: 1, transform: "scale(100%)" },
+        },
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      },
+      animation: {
+        slideInNav: "slideInNav .1s ease-in-out forwards var(--delay, 0.5s)",
+        zoom: "zoom .25s ease-in-out forwards var(--delay, 0)",
+        spin: 'spin 5s linear infinite',
       },
     },
   },
