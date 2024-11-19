@@ -6,7 +6,7 @@ import styles from "./style.module.scss";
 const Layout = () => {
   return (
     <>
-      <ThemeSwitch className="relative" />
+      <ThemeSwitch className="relative z-50 " />
       <div className="relative w-full">
         <Outlet />
       </div>
