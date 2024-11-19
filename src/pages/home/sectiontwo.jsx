@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 
 import ButtonComponent from "../../components/button/buttoncomponent";
@@ -66,9 +67,64 @@ export default function SectionTwo() {
             {isModalOpen && (
               <div
                 ref={modalRef}
-                className="absolute right-20 top-28 w-64 h-52 dark:bg-black-200 bg-light-100 rounded-xl p-2"
+                className="w-40 absolute right-8 top-28 dark:bg-black-200 bg-light-100 rounded-xl p-2 z-20"
               >
-                MODAL
+                <ul className="flex flex-col items-center justify-center text-gray-900 dark:text-white gap-2 xl:gap-6">
+                  <Link to="/">
+                    <li className="">
+                      <button
+                        type="button"
+                        className="w-36 text-gray-800 dark:text-white bg-none hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                      >
+                        Home
+                      </button>
+                    </li>
+                  </Link>
+
+                  <Link to="project">
+                    <li>
+                      <button
+                        type="button"
+                        className="w-36 text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                      >
+                        Project
+                      </button>
+                    </li>
+                  </Link>
+
+                  <Link to="certification">
+                    <li>
+                      <button
+                        type="button"
+                        className="w-36 text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                      >
+                        Certification
+                      </button>
+                    </li>
+                  </Link>
+
+                  <Link to="blog">
+                    <li>
+                      <button
+                        type="button"
+                        className="w-36 text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                      >
+                        Blog
+                      </button>
+                    </li>
+                  </Link>
+
+                  <Link to="roadmap">
+                    <li>
+                      <button
+                        type="button"
+                        className="w-36 text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                      >
+                        Get To Know
+                      </button>
+                    </li>
+                  </Link>
+                </ul>
               </div>
             )}
             <div className="w-full mt-12 mx-8">
@@ -78,7 +134,7 @@ export default function SectionTwo() {
               />
             </div>
             {/* Social Media */}
-            <div className="inline-flex gap-6 lg:gap-8 pt-12 ">
+            {/* <div className="inline-flex gap-6 lg:gap-8 pt-12 ">
               <a className="w-max" href="">
                 <img
                   className=" w-8 h-8 lg:w-10 lg:h-10"
@@ -93,7 +149,7 @@ export default function SectionTwo() {
                   alt=""
                 />
               </a>
-            </div>
+            </div> */}
           </div>
           {/* <div className="flex items-center justify-center"></div> */}
         </div>
