@@ -4,7 +4,7 @@ import Home from "./pages/home/home";
 import Project from "./pages/project/project";
 import Certification from "./pages/certification/certification";
 import Blog from "./pages/blog/blog";
-import Roadmap from "./pages/roadmap/roadmap";
+import Gettoknow from "./pages/gettoknow/gettoknow";
 import Layout from "./pages/layout";
 import NoPage from "./pages/nopage";
 import Test from "./pages/test/test";
@@ -37,7 +37,7 @@ function App({ Component, pageProps }) {
             <Route path="project" element={<Project />} />
             <Route path="certification" element={<Certification />} />
             <Route path="blog" element={<Blog />} />
-            <Route path="roadmap" element={<Roadmap />} />
+            <Route path="gettoknow" element={<Gettoknow />} />
           </Route>
           <Route path="/test" element={<Test />} />
           <Route path="*" element={<NoPage />} />
