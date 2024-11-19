@@ -1,7 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
+import { PiCertificateFill } from "react-icons/pi";
+import { GoHomeFill } from "react-icons/go";
+import { IoFolderOpen } from "react-icons/io5";
+import { TiSocialFlickr } from "react-icons/ti";
 
 export default function NavbarComponent({ isModalOpen, setIsModalOpen }) {
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path
+      ? "dark:border-white border-black"
+      : "border-transparent";
+  };
   return (
     <>
       <div className="relative">
@@ -28,8 +40,11 @@ export default function NavbarComponent({ isModalOpen, setIsModalOpen }) {
               <li className="">
                 <button
                   type="button"
-                  className="text-gray-800 dark:text-white bg-none hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                  className={`flex justify-center items-center gap-2 text-gray-800 dark:text-white bg-none hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 border ${isActive(
+                    "/"
+                  )} transition-colors duration-300`}
                 >
+                  <GoHomeFill className="text-2xl" />
                   Home
                 </button>
               </li>
@@ -39,8 +54,11 @@ export default function NavbarComponent({ isModalOpen, setIsModalOpen }) {
               <li>
                 <button
                   type="button"
-                  className="text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                  className={`flex justify-center items-center gap-2 text-gray-800 dark:text-white bg-none hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 border ${isActive(
+                    "/project"
+                  )} transition-colors duration-300`}
                 >
+                  <IoFolderOpen className="text-2xl" />
                   Project
                 </button>
               </li>
@@ -50,31 +68,37 @@ export default function NavbarComponent({ isModalOpen, setIsModalOpen }) {
               <li>
                 <button
                   type="button"
-                  className="text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                  className={`flex justify-center items-center gap-2 text-gray-800 dark:text-white bg-none hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 border ${isActive(
+                    "/certification"
+                  )} transition-colors duration-300`}
                 >
+                  <PiCertificateFill className="text-2xl" />
                   Certification
                 </button>
               </li>
             </Link>
 
-            <Link to="blog">
+            {/* <Link to="blog">
               <li>
                 <button
                   type="button"
-                  className="text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                  className={`flex justify-center items-center gap-2 text-gray-800 dark:text-white bg-none hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 border ${isActive('/blog')} transition-colors duration-300`}
                 >
                   Blog
                 </button>
               </li>
-            </Link>
+            </Link> */}
 
-            <Link to="roadmap">
+            <Link to="gettoknow">
               <li>
                 <button
                   type="button"
-                  className="text-gray-800 bg-none dark:text-white hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 dark:border-gray-700"
+                  className={`flex justify-center items-center gap-2 text-gray-800 dark:text-white bg-none hover:bg-light-100 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-none dark:hover:bg-gray-700 border ${isActive(
+                    "/gettoknow"
+                  )} transition-colors duration-300`}
                 >
-                  Roadmap
+                  <TiSocialFlickr className="text-2xl" />
+                  Get To Know
                 </button>
               </li>
             </Link>
