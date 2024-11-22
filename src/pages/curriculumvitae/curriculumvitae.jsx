@@ -231,7 +231,7 @@ export default function CurriculumVitae() {
                         </div>
                       </li>
 
-                      <li className="w-full relative mb-6 sm:mb-0 min-w-[20rem]">
+                      <li className="w-full relative mb-6 sm:mb-0 min-w-[25rem]">
                         <div className="flex items-center h-5">
                           <div className="absolute w-3 h-3 bg-gray-200 rounded-full left-1.5 border border-white dark:border-black dark:text-light-100 dark:bg-gray-700"></div>
                           <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
@@ -251,17 +251,17 @@ export default function CurriculumVitae() {
                               Bachelor Degree
                             </time>
                             <div className="text-sm text-black-100 dark:text-light-100 font-medium ">
-                              GPA: 3.85 of 4 (Cum Laude)
+                              GPA: 3.85 of 4
                             </div>
                             <p className="text-base font-normal text-black-100 dark:text-light-100">
                               Active Project Collaboration; Gemastik 2022
                               Competition; Assistant Lecturer & Voluntary;
-                              Programming Organization OSTRIC; Dinamik UPI
-                              Comitee;
+                              Programming Organization OSTRIC; COMPFEST 15 Cyber Security Competition; Dinamik 18 Competitive Programming (CP) Competition; Dinamik UPI Computer Networking Competition Commitee; Google Student Developer Club Member (GDSC)
                             </p>
                           </div>
                         </div>
                       </li>
+                      
                     </ol>
                   </div>
                 </div>
@@ -295,7 +295,7 @@ export default function CurriculumVitae() {
                             </span>
                           </h3>
                           <time className="block mb-2 text-sm font-normal  dark:text-light-200 text-black-300">
-                            Sep 2023 - Now · Bandung, Indonesia · Magang
+                            Sep 2023 - Dec 2023 · Bandung, Indonesia · Intern
                           </time>
                         </div>
                       </div>
@@ -330,12 +330,11 @@ export default function CurriculumVitae() {
                             Bangkit Academy led by Google, Gojek, Tokopedia, &
                             Traveloka.
                             <span className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 ml-3">
-                              Online
+                              Remote
                             </span>
                           </h3>
                           <time className="block mb-2 text-sm font-normal dark:text-light-200 text-black-300">
-                            Feb 2023 - Jul 2023 · Jakarta, Indonesia · Jarak
-                            jauh
+                            Feb 2023 - Jul 2023 · Jakarta, Indonesia
                           </time>
                           <div className="text-sm text-black-100 dark:text-light-100 font-medium ">
                             Graduated with Distinction
