@@ -207,7 +207,7 @@ export default function Project() {
       techStack:
         "Vue.js, Vite.js, Tailwind, HTML, CSS, JS",
       imageSrc: "project-image.jpg",
-      link: "https://github.com/rihitoRiku/shiroplaneApp",
+      link: "https://github.com/rihitoRiku/vue-chatbotv2",
     },
     {
       title: "Nutriast: Health Monitoring Mobile App",
