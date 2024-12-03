@@ -201,6 +201,15 @@ export default function Project() {
       link: "https://github.com/rihitoRiku/motionClient",
     },
     {
+      title: "AI Chatbot with Vue",
+      description:
+        "This project responsive web application powered by Cohere's Command-R-08-2024 language model, designed to provide intelligent, predefined responses to user queries. With a simple, clean interface and fast performance, the chatbot delivers a seamless experience across both desktop and mobile devices, making it easy for users to access information quickly and efficiently.",
+      techStack:
+        "Vue.js, Vite.js, Tailwind, HTML, CSS, JS",
+      imageSrc: "project-image.jpg",
+      link: "https://github.com/rihitoRiku/shiroplaneApp",
+    },
+    {
       title: "Nutriast: Health Monitoring Mobile App",
       description:
         "A collaborative full-stack web app designed for health monitoring and cardiovascular disease prediction using machine learning. Developed by a team of six (3 full-stack/DevOps, 2 ML engineers, 1 mobile developer), Nutriast leverages Google Cloud and TensorFlow to integrate a predictive model trained on Kaggle data. The app includes extensive nutrition data, food intake tracking, and personalized health insights, offering users a robust tool for proactive health management.",

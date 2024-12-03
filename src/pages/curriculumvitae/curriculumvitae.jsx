@@ -545,6 +545,13 @@ export default function CurriculumVitae() {
                         <FaRegStar />
                         <p className="text-base">Tailwind</p>
                       </div>
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8 gap-1">
+                        <FaRegStar />
+                        <p className="text-base">Vue.js</p>
+                      </div>
+                      <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
+                        <p className="text-base">Vite</p>
+                      </div>
                       <div className="p-1 border border-light-100 dark:border-light-300 rounded-lg m-1 flex items-center h-8">
                         <p className="text-base">Flask</p>
                       </div>
