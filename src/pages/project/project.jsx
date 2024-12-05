@@ -21,11 +21,11 @@ const ProjectCard = ({ project, isSingle, delay }) => {
       } border rounded-md dark:border-black-200 flex flex-col xl:flex-row`}
     >
       {/* Image Section */}
-      <div className="sm:w-1/3 w-full h-48 xl:h-full">
+      <div className="xl:w-1/3 w-full h-48 xl:h-full" >
         <img
           src={project.imageSrc}
           alt="Project Thumbnail"
-          className="object-cover w-full h-full rounded-t-md sm:rounded-l-md sm:rounded-t-none"
+          className="object-cover w-full h-full rounded-t-md sm:rounded-l-md sm:rounded-t-none" style={{objectPosition:"top"}}
         />
       </div>
       {/* Content Section */}
@@ -188,7 +188,7 @@ export default function Project() {
         "A full-stack web app portfolio and client management platform featuring an animated UI/UX design with a paper-inspired theme for an interactive, artistic experience. The app is fully responsive across all devices, with an elegant layout and fonts for a visually engaging presentation. Optimized for fast performance, it offers smooth navigation and quick load times. Developed end-to-end, this solo project covered the complete SDLC,  from UI/UX design to deployment",
       techStack:
         "ReactJs, Tailwind, ExpressJs, MongoDB, Cloudinary, Google Captcha, Emailjs, SCSS, HTML, CSS, JS",
-      imageSrc: "project-image.jpg",
+      imageSrc: "./Assets/Projects/shiro.png",
       link: "https://github.com/rihitoRiku/shiroplaneApp",
     },
     {
@@ -197,7 +197,7 @@ export default function Project() {
         "A dynamic full-stack learning app designed to make TOEFL preparation engaging and adaptive. Users build unique profiles by collecting stars, rank badges, and customizable avatars, while tracking their progress through milestones and quests. The app features interactive quizzes/exam, one adapt to the learner’s needs via Bayesian Knowledge Tracing, and a history of challenges to review past attempts. instant feedback, completion monitoring, leaderboards, customizable statuses, and a points-based store, OcToefl creates an immersive and personalized learning journey",
       techStack:
         "Next.js, React.js, Express.js, MongoDB, TailwindCSS, Zustand, Formik, ReactQuill, SCSS, HTML, CSS, JS",
-      imageSrc: "project-image-2.jpg",
+      imageSrc: "./Assets/Projects/motion.png",
       link: "https://github.com/rihitoRiku/motionClient",
     },
     {
@@ -206,7 +206,7 @@ export default function Project() {
         "This project responsive web application powered by Cohere's Command-R-08-2024 language model, designed to provide intelligent, predefined responses to user queries. With a simple, clean interface and fast performance, the chatbot delivers a seamless experience across both desktop and mobile devices, making it easy for users to access information quickly and efficiently.",
       techStack:
         "Vue.js, Vite.js, Tailwind, HTML, CSS, JS",
-      imageSrc: "project-image.jpg",
+      imageSrc: "./Assets/Projects/vue.png",
       link: "https://github.com/rihitoRiku/vue-chatbotv2",
     },
     {
