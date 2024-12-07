@@ -215,7 +215,7 @@ export default function Project() {
         "A collaborative full-stack web app designed for health monitoring and cardiovascular disease prediction using machine learning. Developed by a team of six (3 full-stack/DevOps, 2 ML engineers, 1 mobile developer), Nutriast leverages Google Cloud and TensorFlow to integrate a predictive model trained on Kaggle data. The app includes extensive nutrition data, food intake tracking, and personalized health insights, offering users a robust tool for proactive health management.",
       techStack:
         "Express.js, Kotlin, Tensorflow.js Machine Learning, Google Collab, Python, Flask, Android Studio, Google Cloud Run, Google Cloud Bucket",
-      imageSrc: "project-image-3.jpg",
+      imageSrc: "./Assets/Projects/nutriastmob.png",
       link: "https://github.com/C23-PC718",
     },
     {
